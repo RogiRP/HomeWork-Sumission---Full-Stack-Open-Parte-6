@@ -34,6 +34,11 @@
       "content": "I already fall in love with Vanessa, and ther is nothing i can do anymore...",
       "votes": 0,
       "id": "MzXAS43QUiY"
+    },
+    {
+      "content": "Vanessa, i love you",
+      "votes": 0,
+      "id": "_p_uvNv6fpw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
