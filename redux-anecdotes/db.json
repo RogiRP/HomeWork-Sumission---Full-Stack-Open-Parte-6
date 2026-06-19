@@ -28,17 +28,22 @@
     {
       "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
       "id": "6",
-      "votes": 0
+      "votes": 1
     },
     {
       "content": "I already fall in love with Vanessa, and ther is nothing i can do anymore...",
-      "votes": 5,
+      "votes": 11,
       "id": "MzXAS43QUiY"
     },
     {
       "content": "Vanessa, i love you",
-      "votes": 0,
+      "votes": 1,
       "id": "_p_uvNv6fpw"
+    },
+    {
+      "content": "The time i fall in love with Vanessa",
+      "votes": 1,
+      "id": "UBuxXuq-oek"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
