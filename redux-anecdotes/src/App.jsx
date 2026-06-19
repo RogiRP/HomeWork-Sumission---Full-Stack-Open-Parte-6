@@ -8,6 +8,20 @@ const App = () => {
     dispatch({ type: 'VOTE', payload: { id } })
   }
 
+  const addAnecdote = (event) => {
+    event.preventDefault()
+    const content = event.target.anecdote.value
+    event.target.anecdote.value = ''
+    dispatch({
+      type: 'NEW_ANECDOTE',
+      payload: {
+        content,
+        id: (100000 * Math.random()).toFixed(0),
+        votes: 0
+      }
+    })
+  }
+
   const sortedAnecdotes = [...anecdotes].sort((a, b) => b.votes - a.votes)
 
   return (
@@ -23,9 +37,9 @@ const App = () => {
         </div>
       ))}
       <h2>create new</h2>
-      <form>
+      <form onSubmit={addAnecdote}>
         <div>
-          <input />
+          <input name='anecdote' />
         </div>
         <button>create</button>
       </form>

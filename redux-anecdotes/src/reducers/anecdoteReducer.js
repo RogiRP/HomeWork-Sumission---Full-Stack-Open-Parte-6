@@ -29,6 +29,9 @@ const reducer = (state = initialState, action) => {
           : anecdote
       )
     }
+    case 'NEW_ANECDOTE': {
+      return [...state, action.payload]
+    }
     default:
       return state
   }
