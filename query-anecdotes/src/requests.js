@@ -14,6 +14,12 @@ export const createAnecdote = async (content) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ content, votes: 0 })
   })
+
+  if (!response.ok) {
+    const errorBody = await response.json()
+    throw new Error(errorBody.error)
+  }
+
   return response.json()
 }
 
